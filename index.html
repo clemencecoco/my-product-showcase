@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-item {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            width: 300px;
+            transition: box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .product-item:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            height: 200px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-content {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-weight: 700;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .product-detail-link {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .product-detail-link:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Clemenn's Product Showcase</h1>
+        <p>Handcrafted items, trendy jewelry, and e-commerce deals</p>
+    </header>
+
+    <div class="container">
+        <div class="product-grid">
+            <!-- Example Product 1 -->
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                <div class="product-content">
+                    <h3 class="product-title">Handmade Bracelet</h3>
+                    <p class="product-description">Beautiful handcrafted bracelet made of natural stones. Perfect for any occasion.</p>
+                    <p class="product-price">$25.00</p>
+                    <a class="product-detail-link" href="#">View Details</a>
+                </div>
+            </div>
+
+            <!-- Example Product 2 -->
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                <div class="product-content">
+                    <h3 class="product-title">Vintage Necklace</h3>
+                    <p class="product-description">Elegant vintage necklace with intricate design. Add a classic touch to your outfit.</p>
+                    <p class="product-price">$45.00</p>
+                    <a class="product-detail-link" href="#">View Details</a>
+                </div>
+            </div>
+
+            <!-- Example Product 3 -->
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                <div class="product-content">
+                    <h3 class="product-title">Wooden Coaster Set</h3>
+                    <p class="product-description">Set of 4 handmade wooden coasters, perfect for adding a rustic charm to your space.</p>
+                    <p class="product-price">$18.00</p>
+                    <a class="product-detail-link" href="#">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Clemenn's Product Showcase. All rights reserved.</p>
+    </footer>
+</body>
+</html>
